@@ -2,16 +2,21 @@
   "name": "nlw-back",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/server.ts",
+    "migration": "drizzle-kit generate:sqlite"
+  },
   "devDependencies": {
     "@types/node": "^20.6.0",
     "bun-types": "latest",
-    "tsx": "^3.12.9",
+    "drizzle-kit": "^0.19.13",
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "drizzle-orm": "^0.28.6",
     "fastify": "^4.23.0"
   }
 }
