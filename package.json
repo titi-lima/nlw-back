@@ -1,0 +1,17 @@
+{
+  "name": "nlw-back",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "bun-types": "latest",
+    "tsx": "^3.12.9",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "fastify": "^4.23.0"
+  }
+}
