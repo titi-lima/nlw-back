@@ -1,10 +1,9 @@
 import fastify from "fastify";
+import { appRoutes } from "./routes";
 
 const app = fastify();
 
-app.get("/", async (_, reply) => {
-  return { hello: "world" };
-});
+app.register(appRoutes);
 
 app
   .listen({

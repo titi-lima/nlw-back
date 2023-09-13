@@ -6,7 +6,8 @@
     "dev": "bun --watch src/server.ts",
     "migration": "drizzle-kit generate:sqlite",
     "studio": "drizzle-kit studio",
-    "push": "drizzle-kit push:sqlite"
+    "push": "drizzle-kit push:sqlite",
+    "setup-bun": "bun run --cwd node_modules/better-sqlite3 build-debug && bun push"
   },
   "devDependencies": {
     "@types/node": "^20.6.0",
@@ -19,6 +20,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@fastify/multipart": "^7.7.3",
     "drizzle-orm": "^0.28.6",
     "fastify": "^4.23.0"
   }

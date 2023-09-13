@@ -1,6 +1,6 @@
 import { integer, sqliteTable, text } from "drizzle-orm/sqlite-core";
 
-export const video = sqliteTable("video", {
+export const Video = sqliteTable("video", {
   id: integer("id").primaryKey({ autoIncrement: true }),
   name: text("name").notNull(),
   path: text("path").notNull(),
@@ -10,7 +10,7 @@ export const video = sqliteTable("video", {
     .$default(() => new Date(Date.now())),
 });
 
-export const prompt = sqliteTable("prompt", {
+export const Prompt = sqliteTable("prompt", {
   id: integer("id").primaryKey({ autoIncrement: true }),
   title: text("title").notNull(),
   template: text("template").notNull(),
