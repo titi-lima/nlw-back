@@ -7,6 +7,7 @@
     "migration": "drizzle-kit generate:sqlite",
     "studio": "drizzle-kit studio",
     "push": "drizzle-kit push:sqlite",
+    "postinstall": "bun run setup-bun",
     "setup-bun": "bun run --cwd node_modules/better-sqlite3 build-debug && bun push"
   },
   "devDependencies": {
