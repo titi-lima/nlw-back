@@ -1,3 +1,4 @@
+import AIController from "./ai";
 import PromptController from "./prompt";
 import VideoController from "./video";
-export { PromptController, VideoController };
+export { PromptController, VideoController, AIController };

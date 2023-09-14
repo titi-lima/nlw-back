@@ -9,4 +9,5 @@ export async function VideoRouter(app: FastifyInstance) {
     },
   });
   app.post("/", VideoController.uploadVideo);
+  app.post("/:videoId/transcription", VideoController.addTranscription);
 }
